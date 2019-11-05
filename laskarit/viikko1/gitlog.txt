@@ -1,0 +1,104 @@
+commit 0cfb9d8ea2ad58653e5254164f374e148dc03a0a
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:53:18 2019 +0200
+
+    tiedoston poisto ja uudelleen nimeäminen
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 3583adda20fa356986a233318d85ab7cd9c939a5
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:48:20 2019 +0200
+
+    uusi kansio nimeltä tiedostoja ja sinne kolme tiedostoa
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit db630a2c5458005cb60364a3971650b39101543a
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:39:38 2019 +0200
+
+    tekstien muokkausta
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 3dc01fa4685c8835ccf80c165738f5608dc9db63
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:36:26 2019 +0200
+
+    tiedosto.txt uudelleennimeys eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8bfe897b1db131fcf6cd2de9cbac3bf2f4d56ce1
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:34:37 2019 +0200
+
+    poistin toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 389f3a4e6c6c9372105d3f8d92f6f0adf76730cf
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:32:20 2019 +0200
+
+    tiedostoon tiedosto.txt paljon tekstiä
+
+ tiedosto.txt | 1172 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 1170 insertions(+), 2 deletions(-)
+
+commit 7c081beceaf4463124ccf8ded5f60a34f6f8d8d6
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:26:11 2019 +0200
+
+    uusi kansio ja sinne uusi tiedosto
+
+ stuff/t.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 947b4bbd2cd2ae52d5b454fe04b6447af1ab352c
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:24:59 2019 +0200
+
+    muokkasin tiedostojen tekstejä
+
+ tiedosto.txt | 3 ++-
+ toinen.txt   | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 18d5c1904a8b1814636946c61836b86ca08ee56a
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:22:28 2019 +0200
+
+    lisättiin kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 3f165ce81f4fc6592418937b6a168e321f757570
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:20:35 2019 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 7e5f38eefc19951e2f663d109cd9feac707e4150
+Author: ville suokas <vilsuo1@gmail.com>
+Date:   Tue Nov 5 16:19:09 2019 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
