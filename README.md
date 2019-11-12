@@ -1,4 +1,6 @@
-# Otsikko
+# Päässälaskuharjoittelusovellus
+## Dokumentaatio
+[vaatimusmäärittely](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 ## Tehtävät
 ### Viikko 1
 [gitlog.txt](https://github.com/vilsuo/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
