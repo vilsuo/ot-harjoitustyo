@@ -14,21 +14,21 @@
 ## Komentorivitoiminnot
 ### Testaus
 Testit suoritetaan komennolla
-¸¸¸
+```
 mvn test
-¸¸¸
+```
 
 Testikattavuusraportti luodaan komennolla
-¸¸¸
+```
 mvn jacoco:report
-¸¸¸
+```
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto *target/site/jacoco/index.html*
 
-## Suoritettavan jarin generointi
+### Suoritettavan jarin generointi
 Komento
-¸¸¸
+```
 mvn package
-¸¸¸
+```
 generoi hakemistoon *target* suoritettavan jar-tiedoston *Paassalaskuharjoittelusovellus-1.0-SNAPSHOT.jar*
 
 
