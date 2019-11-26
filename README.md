@@ -25,7 +25,7 @@ mvn package
 generoi hakemistoon *target* suoritettavan jar-tiedoston *Paassalaskuharjoittelusovellus-1.0-SNAPSHOT.jar*
 
 ### Checkstyle
-Tiedostoon [checkstyle.xml]() määritelemät tarkistukset suoritetaan komennolla
+Tiedostoon [checkstyle.xml](https://github.com/vilsuo/ot-harjoitustyo/blob/master/Paassalaskuharjoittelusovellus/checkstyle.xml) määritelemät tarkistukset suoritetaan komennolla
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
