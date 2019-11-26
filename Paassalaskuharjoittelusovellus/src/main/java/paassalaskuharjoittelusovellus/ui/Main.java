@@ -6,9 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import paassalaskuharjoittelusovellus.logic.Difficulty;
-import paassalaskuharjoittelusovellus.logic.Game;
-import paassalaskuharjoittelusovellus.logic.User;
 
 public class Main extends Application {
     
