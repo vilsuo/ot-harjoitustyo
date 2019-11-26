@@ -64,7 +64,7 @@ public class Game {
             if(livesLeft > 0) {
                 setNewRandomOperation();
             } else {
-                
+                // Todo
             }
         }
     }
