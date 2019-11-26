@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import paassalaskuharjoittelusovellus.logic.Difficulty;
 import paassalaskuharjoittelusovellus.logic.Game;
-import paassalaskuharjoittelusovellus.logic.User;
+import paassalaskuharjoittelusovellus.domain.User;
 
 public class GameTest {
     

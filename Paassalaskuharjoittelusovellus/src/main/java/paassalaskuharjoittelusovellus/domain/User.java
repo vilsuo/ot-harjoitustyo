@@ -1,5 +1,5 @@
 
-package paassalaskuharjoittelusovellus.logic;
+package paassalaskuharjoittelusovellus.domain;
 
 public class User {
     private final String userName;
