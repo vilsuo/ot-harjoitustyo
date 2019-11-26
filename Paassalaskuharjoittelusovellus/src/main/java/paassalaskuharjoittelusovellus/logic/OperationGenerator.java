@@ -34,10 +34,10 @@ public class OperationGenerator {
         int val1 = random.nextInt(9) + 2;
         int val2 = random.nextInt(9) + 2;
         
-        if(op.equals("/")) {
+        if (op.equals("/")) {
             return val1 * val2 + op + val1;
             
-        } else if(op.equals("*")) {
+        } else if (op.equals("*")) {
             return val1 + op + val2;
             
         } else {
@@ -50,10 +50,10 @@ public class OperationGenerator {
         int val1 = random.nextInt(18) + 7;
         int val2 = random.nextInt(30) + 11;
         
-        if(op.equals("/")) {
+        if (op.equals("/")) {
             return val1 * val2 + op + val1;
             
-        } else if(op.equals("*")) {
+        } else if (op.equals("*")) {
             return val1 + op + val2;
             
         } else {
@@ -67,10 +67,10 @@ public class OperationGenerator {
         int val1 = random.nextInt(64) + 37;
         int val2 = random.nextInt(37) + 14;
         
-        if(op.equals("/")) {
+        if (op.equals("/")) {
             return val1 * val2 * (random.nextInt(9) + 1) + op + val1;
             
-        } else if(op.equals("*")) {
+        } else if (op.equals("*")) {
             return val1 + op + val2;
             
         } else {

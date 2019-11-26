@@ -2,9 +2,9 @@
 package paassalaskuharjoittelusovellus.logic;
 
 public enum Difficulty {
-    EASY(1,5),
-    MEDIUM(5,10),
-    HARD(10,20);
+    EASY(1, 5),
+    MEDIUM(5, 10),
+    HARD(10, 20);
     
     final int pointsPerCorrectAnswer;
     final int timePerAnswer;

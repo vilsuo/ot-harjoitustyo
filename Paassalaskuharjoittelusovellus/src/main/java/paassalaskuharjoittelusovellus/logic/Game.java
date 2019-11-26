@@ -46,22 +46,22 @@ public class Game {
         operation = operationGenerator.createNewRandomOperation();
     }
     
-    public boolean checkAnswer(int answer, String operation) throws ScriptException{
+    public boolean checkAnswer(int answer, String operation) throws ScriptException {
         ScriptEngineManager mgr = new ScriptEngineManager();
         ScriptEngine engine = mgr.getEngineByName("JavaScript");
         return (int) engine.eval(operation) == answer;
     }
     
-    public void answer(int answer) throws ScriptException{
+    public void answer(int answer) throws ScriptException {
         boolean correct = checkAnswer(answer, operation);
         
-        if(correct) {
+        if (correct) {
             addPoints();
             setNewRandomOperation();
             
         } else {
             livesLeft--;
-            if(livesLeft > 0) {
+            if (livesLeft > 0) {
                 setNewRandomOperation();
             } else {
                 // Todo
