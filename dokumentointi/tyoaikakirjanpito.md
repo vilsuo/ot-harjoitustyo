@@ -8,5 +8,5 @@
 |25.11   | 3  | projektin käyttöliittymän luontia|
 |26.11   | 5  | projektin käyttöliittymän luontia|
 |2.12    | 5  | projektin käyttöliittymän luontia|
-|3.12    |   | tietokantoja ja testejä|
-|yhteensä| 23?  | 
+|3.12    | 5  | tietokantoja ja sisäänkirjautumisen luonti|
+|yhteensä| 28  | 

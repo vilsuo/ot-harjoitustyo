@@ -30,5 +30,6 @@
          </children>
       </GridPane>
       <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonPressed" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Label fx:id="userCreationErrorLabel" layoutX="70.0" layoutY="240.0" prefHeight="16.0" prefWidth="270.0" text="This username already exists." textFill="#d70808" visible="false" />
    </children>
 </AnchorPane>

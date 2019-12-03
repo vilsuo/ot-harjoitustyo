@@ -20,7 +20,7 @@ public class GameTest {
     
     @Before
     public void setUp() {
-        User user = new User("username");
+        User user = new User("username", "password");
         
         gameEasy = new Game(Difficulty.EASY, user);
         gameMedium = new Game(Difficulty.MEDIUM, user);

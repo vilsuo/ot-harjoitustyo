@@ -11,9 +11,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import paassalaskuharjoittelusovellus.dao.UserDao;
+import paassalaskuharjoittelusovellus.domain.User;
 
 public class CreateUserViewController implements Initializable {
 
@@ -25,6 +28,8 @@ public class CreateUserViewController implements Initializable {
     private Button createButton;
     @FXML
     private Button backButton;
+    @FXML
+    private Label userCreationErrorLabel;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -32,9 +37,25 @@ public class CreateUserViewController implements Initializable {
     }    
 
     @FXML
-    private void onCreateButtonPressed(ActionEvent event) {
+    private void onCreateButtonPressed(ActionEvent event) throws Exception {
         String usernameText = usernameTextField.getText();
         String passwordText = passwordField.getText();
+        
+        if(usernameText.equals("") || passwordText.equals("")) {
+            return;
+        }
+        
+        UserDao userDao = new UserDao();
+        if(userDao.usernameIsTaken(usernameText)) {
+            userCreationErrorLabel.setVisible(true);
+            passwordField.clear();
+        } else {
+            userDao.create(new User(usernameText, passwordText));
+            onBackButtonPressed(event);
+        }
+        System.out.println("");
+        System.out.println("Printing users creteUserView");
+        userDao.getUsers().forEach(System.out::println);
     }
 
     @FXML
