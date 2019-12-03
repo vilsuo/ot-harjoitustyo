@@ -53,9 +53,9 @@ public class CreateUserViewController implements Initializable {
             userDao.create(new User(usernameText, passwordText));
             onBackButtonPressed(event);
         }
-        System.out.println("");
-        System.out.println("Printing users creteUserView");
-        userDao.getUsers().forEach(System.out::println);
+//        System.out.println("");
+//        System.out.println("Printing users creteUserView");
+//        userDao.getUsers().forEach(System.out::println);
     }
 
     @FXML

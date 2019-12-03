@@ -47,9 +47,9 @@ public class LoginViewController implements Initializable {
     @FXML
     private void onLoginButtonPressed(ActionEvent event) throws Exception {
         UserDao userDao = new UserDao();
-        System.out.println("");
-        System.out.println("Printing users loginView");
-        userDao.getUsers().forEach(System.out::println);
+//        System.out.println("");
+//        System.out.println("Printing users loginView");
+//        userDao.getUsers().forEach(System.out::println);
         if(userDao.usernameAndPasswordMatches(usernameTextField.getText(), passwordField.getText())) {
             Parent menuViewParent = FXMLLoader.load(getClass().getResource("/fxml/MenuView.fxml"));
             Scene menuViewScene = new Scene(menuViewParent);
