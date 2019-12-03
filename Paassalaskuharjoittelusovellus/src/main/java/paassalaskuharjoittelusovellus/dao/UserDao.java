@@ -19,7 +19,7 @@ public class UserDao {
     }
     
     private Connection getConnection() throws Exception {
-        if(conn == null) {
+        if (conn == null) {
             conn = DriverManager.getConnection(url, "sa", "");
         }
         return conn;
@@ -28,7 +28,7 @@ public class UserDao {
     private void createUserTable() throws Exception {
         String query = "CREATE TABLE IF NOT EXISTS User (username VARCHAR(200), password VARCHAR(200));";
         
-        try(Statement stmt = getConnection().createStatement()){
+        try (Statement stmt = getConnection().createStatement()) {
             stmt.execute(query);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -36,8 +36,8 @@ public class UserDao {
     }
     
     public void create(User user) throws Exception {
-        if(usernameIsTaken(user.getUserName())) {
-           return;
+        if (usernameIsTaken(user.getUserName())) {
+            return;
         }
         
         String query = "INSERT INTO User"
@@ -75,7 +75,7 @@ public class UserDao {
         ResultSet rs = stmt.executeQuery();
         
         List<User> users = new ArrayList<>();
-        while(rs.next()) {
+        while (rs.next()) {
             users.add(new User(rs.getString("username"), rs.getString("password")));
         }
         return users;

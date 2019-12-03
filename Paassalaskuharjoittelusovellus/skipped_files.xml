@@ -10,5 +10,6 @@
     <suppress files="paassalaskuharjoittelusovellus.ui.LoginViewController.java" checks="[a-zA-Z0-9]*"/>
     <suppress files="paassalaskuharjoittelusovellus.ui.MenuViewController.java" checks="[a-zA-Z0-9]*"/>
     <suppress files="paassalaskuharjoittelusovellus.ui.PlayViewController.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="paassalaskuharjoittelusovellus.ui.HiscoreViewController.java" checks="[a-zA-Z0-9]*"/>
 </suppressions>
 
