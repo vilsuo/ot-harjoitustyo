@@ -6,5 +6,7 @@
 |18.11   | 3  | projektin aloitus, riippuvuuksien määrittely + opiskelu|
 |19.11   | 5  | projektin logiikka ja testejä|
 |25.11   | 3  | projektin käyttöliittymän luontia|
-|26.11   | 5  | projektin käyttöliittymän ja tietokantojen luontia|
-|yhteensä| 18  | 
+|26.11   | 5  | projektin käyttöliittymän luontia|
+|2.12    | 5  | projektin käyttöliittymän luontia|
+|3.12    |   | tietokantoja ja testejä|
+|yhteensä| 23?  | 

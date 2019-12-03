@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paassalaskuharjoittelusovellus.ui;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -20,11 +15,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author ville
- */
 public class CreateUserViewController implements Initializable {
 
     @FXML
@@ -43,6 +33,8 @@ public class CreateUserViewController implements Initializable {
 
     @FXML
     private void onCreateButtonPressed(ActionEvent event) {
+        String usernameText = usernameTextField.getText();
+        String passwordText = passwordField.getText();
     }
 
     @FXML

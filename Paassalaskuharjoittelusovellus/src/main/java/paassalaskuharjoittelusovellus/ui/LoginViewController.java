@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import paassalaskuharjoittelusovellus.domain.User;
 
 public class LoginViewController implements Initializable {
 
@@ -26,9 +27,6 @@ public class LoginViewController implements Initializable {
     @FXML
     private Button createANewUserButton;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -46,11 +44,24 @@ public class LoginViewController implements Initializable {
     }
     
     @FXML
-    private void onLoginButtonPressed(ActionEvent event) {
-        
-    }
+    private void onLoginButtonPressed(ActionEvent event) throws Exception {
+//        if(käyttäjälöytyi) {
 
-    @FXML
-    private void onBackButtonPressed(ActionEvent event) {
+        Parent menuViewParent = FXMLLoader.load(getClass().getResource("/fxml/MenuView.fxml"));
+        Scene menuViewScene = new Scene(menuViewParent);
+        
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window.setScene(menuViewScene);
+        
+        
+        
+        
+        
+        window.show();
+//        } else {
+//            String errorMessage = "Invalid username or password";
+//        }
+
     }
 }
