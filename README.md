@@ -6,6 +6,10 @@
 
 [Arkkitehtuurikuvaus](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+
+## Releaset
+[Viikko 5] (https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Komentorivitoiminnot
 ### Testaus
 Testit suoritetaan komennolla
