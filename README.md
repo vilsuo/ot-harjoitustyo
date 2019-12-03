@@ -8,7 +8,7 @@
 
 
 ## Releaset
-[Viikko 5] (https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
+[Viikko 5](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Komentorivitoiminnot
 ### Testaus
