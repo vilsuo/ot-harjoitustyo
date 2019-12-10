@@ -1,1 +1,1 @@
-![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kaavio.jpg)
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/kaavio.jpg)
