@@ -12,7 +12,7 @@
 ## Releaset
 [Viikko 5](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
 
-[Viikko 6]()
+[Viikko 6](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/Viikko6)
 
 ## Komentorivitoiminnot
 ### Testaus
