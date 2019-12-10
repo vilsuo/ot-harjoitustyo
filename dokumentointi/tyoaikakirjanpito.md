@@ -10,5 +10,5 @@
 |2.12    | 5  | projektin käyttöliittymän luontia|
 |3.12    | 5  | tietokantoja ja sisäänkirjautumisen luonti|
 |9.12    | 3  | testejä|
-10.12    | 4  | pelin logiikan luontia|
-|yhteensä| 35  | 
+10.12    | 5  | pelin logiikan luontia, javadoc, käyttöohje|
+|yhteensä| 36  | 
