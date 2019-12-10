@@ -1,4 +1,6 @@
 # Päässälaskuharjoittelusovellus
+Sovelluksella käyttäjä voi harjoitella paassalaskutaitojaan. Sovelluksessa on valittavissa kolme eri vaikeustasoa. Käyttäjä voi pistelistalta tarkastella myös muiden käyttäjien saamia pisteitä.
+
 ## Dokumentaatio
 [Käyttöohje](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
 
