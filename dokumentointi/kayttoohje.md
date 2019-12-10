@@ -9,7 +9,7 @@ java -jar paassalaskuharjoittelusovellus.jar
 
 ## Kirjautuminen
 Sovellus käynnistyy kirjautumisnäkymään:
-![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/login.png)
+![][https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/login.png]
 
 Kirjautuminen onnistuu syöttämällä käyttäjätunnus ja salasana niille tarkoitetuille kentille ja painamalla **Login**-nappia.
 
