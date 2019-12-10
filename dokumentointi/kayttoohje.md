@@ -1,1 +1,33 @@
 # Käyttöohje
+Lataa tiedosto [paassalaskuharjoitelusovellus.jar](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/Viikko6)
+
+## Ohjelman käynnistäminen
+Ohjelma käynnistetään komennolla
+```
+java -jar paassalaskuharjoittelusovellus.jar
+```
+
+## Kirjautuminen
+Sovellus käynnistyy kirjautumisnäkymään:
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/login.png)
+
+Kirjautuminen onnistuu syöttämällä käyttäjätunnus ja salasana niille tarkoitetuille kentille ja painamalla **Login**-nappia.
+
+## Uuden käyttäjän luonti
+Uuden käyttäjän luomiseen siirrytään painamalla **Create a new account**-nappia. Tämän jälkeen syötetän haluamansa käyttäjätunnus ja salasana niille tarkoitetuille kentille ja painamalla **Create**-nappia.
+![https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/createUser.png]
+
+## Pelin valitseminen
+Kirjauduttuaan sisään käyttäjä voi valita vaikeustason **Select difficulty**-valikosta.
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/playNotSelected.png)
+
+ja tämän jälkeen siirtyä peliin painamalla **Play**-nappia.
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/playSelected.png)
+
+## Pelaaminen
+Pelaaja syöttää vastauksensa ylläolevaan laskutoimitukseen vastauskenttään ja painaa **ENTER**-näppäintä antaakseen vastauksensa. Pelaajalla on aikaa vastata laskutoimitukseen kunnes aikaa edustava punainen palkki on kokonaan hävinnut. Vastauksen antamisen tai ajan loppumisen jälkeen annetaan uusi laskutoimitus ja aika alkaa alusta. Pelaajan vastattua vastauskentän alapuolelle ilmestyy teksti kertoen oliko pelaajan vastaus oikein. Oikeasta vastauksesta pelaajalle annetaan pisteitä. Väärästä vastauksesta ja ajan loppumisesta pelaajalta sakotetaan yksi elämä. Kolme elämää menetettyään pelaaja häviää pelin.
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/game.png)
+
+## Hiscore
+Käyttäjä voi tarkastella pisteitä hiscorelistalta painamalla nappia **Hiscores**.
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/hiscoreNoValues.png)
