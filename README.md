@@ -1,6 +1,6 @@
 # Päässälaskuharjoittelusovellus
 ## Dokumentaatio
-[Käyttöohje]()
+[Käyttöohje](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
