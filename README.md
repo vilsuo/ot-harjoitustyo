@@ -4,7 +4,7 @@
 
 [Vaatimusmäärittely](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
-[Työaikakirjanpito](https://github.com/vilsuo/ot-harjoitustyo/blob/master/tyoaikakirjanpito.md)
+[Työaikakirjanpito](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/tyoaikakirjanpito.md)
 
 [Arkkitehtuurikuvaus](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
