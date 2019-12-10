@@ -36,6 +36,9 @@ public class Game {
         return livesLeft;
     }
     
+    /**
+     * Loses one live from the game.
+     */
     public void loseALife() {
         livesLeft--;
     }
@@ -52,10 +55,14 @@ public class Game {
     }
     
     /**
+     * Checks if the given answer is correct for the given operation.
+     * 
      *
-     * @param answer
-     * @param operation
+     * @param answer given answer
+     * @param operation the operation to check the answer for
+     * 
      * @return true if answer is correct for the operation.
+     * 
      * @throws ScriptException
      */
     public boolean checkAnswer(double answer, String operation) throws ScriptException {

@@ -1,5 +1,7 @@
 # Päässälaskuharjoittelusovellus
 ## Dokumentaatio
+[Käyttöohje]()
+
 [Vaatimusmäärittely](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
 [Työaikakirjanpito](https://github.com/vilsuo/ot-harjoitustyo/blob/master/tyoaikakirjanpito.md)
@@ -9,6 +11,8 @@
 
 ## Releaset
 [Viikko 5](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
+
+[Viikko 6]()
 
 ## Komentorivitoiminnot
 ### Testaus
@@ -29,6 +33,15 @@ Komento
 mvn package
 ```
 generoi hakemistoon *target* suoritettavan jar-tiedoston *Paassalaskuharjoittelusovellus-1.0-SNAPSHOT.jar*
+
+### JavaDoc
+JavaDoc generoidaan komennolla
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia voi tarkastella avaamalla selaimella tiedosto *targer/site/apidocs/index.html*
+
 
 ### Checkstyle
 Tiedostoon [checkstyle.xml](https://github.com/vilsuo/ot-harjoitustyo/blob/master/Paassalaskuharjoittelusovellus/checkstyle.xml) määritelemät tarkistukset suoritetaan komennolla

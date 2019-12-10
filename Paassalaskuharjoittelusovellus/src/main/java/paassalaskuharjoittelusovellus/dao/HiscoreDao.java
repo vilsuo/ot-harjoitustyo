@@ -28,6 +28,11 @@ public class HiscoreDao {
         return conn;
     }
     
+    /**
+     * Method creates Hiscore table. If the table already exists, nothing happens.
+     * 
+     * @throws Exception 
+     */
     private void createHiscoreTable() throws Exception {
         String query = "CREATE TABLE IF NOT EXISTS Hiscore (\n"
                 + "id INTEGER AUTO_INCREMENT PRIMARY KEY, \n"
@@ -43,6 +48,15 @@ public class HiscoreDao {
         }
     }
     
+    /**
+     * 
+     * Adds new entry in the Hiscore table.
+     * 
+     * @param user gets username from this user
+     * @param game Gets points and difficulty from this game
+     * 
+     * @throws Exception 
+     */
     public void add(User user, Game game) throws Exception {
         
         String query = "INSERT INTO Hiscore"

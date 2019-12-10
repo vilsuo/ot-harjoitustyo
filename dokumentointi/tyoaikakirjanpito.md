@@ -9,4 +9,6 @@
 |26.11   | 5  | projektin käyttöliittymän luontia|
 |2.12    | 5  | projektin käyttöliittymän luontia|
 |3.12    | 5  | tietokantoja ja sisäänkirjautumisen luonti|
-|yhteensä| 28  | 
+|9.12    | 3  | testejä|
+10.12    | 4  | pelin logiikan luontia|
+|yhteensä| 35  | 

@@ -30,6 +30,11 @@ public class UserDao {
         return conn;
     }
     
+    /**
+     * Method creates User table. If the table already exists, nothing happens.
+     * 
+     * @throws Exception 
+     */
     private void createUserTable() throws Exception {
         String query = "CREATE TABLE IF NOT EXISTS User (username VARCHAR(255), password VARCHAR(255));";
         
@@ -40,6 +45,13 @@ public class UserDao {
         }
     }
     
+    /**
+     * Adds a new User into the user database.
+     * 
+     * @param user user to add
+     * 
+     * @throws Exception
+     */
     public void create(User user) throws Exception {
         if (usernameIsTaken(user.getUserName())) {
             return;
@@ -54,6 +66,16 @@ public class UserDao {
         stmt.close();
     }
     
+    /**
+     * Checks if there is username and password match in the user database.
+     *
+     * @param username username to check
+     * @param password password to check
+     * 
+     * @return true if there is a match, false otherwise
+     * 
+     * @throws Exception
+     */
     public boolean usernameAndPasswordMatches(String username, String password) throws Exception {
         String query = "SELECT username, password FROM User WHERE username = ? AND password = ?;";
         PreparedStatement stmt = getConnection().prepareStatement(query);
@@ -63,6 +85,15 @@ public class UserDao {
         return rs.next() == true;
     }
     
+    /**
+     * Checks if the username is found in the user database.
+     * 
+     * @param username username to check
+     * 
+     * @return true if the username is taken, false otherwise
+     * 
+     * @throws Exception
+     */
     public boolean usernameIsTaken(String username) throws Exception {
         String query = "SELECT username FROM User WHERE username = ?;";
         PreparedStatement stmt = getConnection().prepareStatement(query);

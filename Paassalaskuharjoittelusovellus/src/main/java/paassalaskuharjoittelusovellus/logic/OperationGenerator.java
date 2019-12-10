@@ -16,6 +16,11 @@ public class OperationGenerator {
         this.operations = Arrays.asList("+", "-", "/", "*");
     }
     
+    /**
+     * Creates a new random operation for current difficulty.
+     * 
+     * @return operation as a String
+     */
     public String createNewRandomOperation() {
         switch (difficulty) {
             case EASY:
