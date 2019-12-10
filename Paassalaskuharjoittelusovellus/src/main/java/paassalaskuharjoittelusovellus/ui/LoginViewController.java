@@ -16,6 +16,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import paassalaskuharjoittelusovellus.dao.UserDao;
+import paassalaskuharjoittelusovellus.domain.User;
 
 public class LoginViewController implements Initializable {
 
@@ -47,10 +48,8 @@ public class LoginViewController implements Initializable {
     @FXML
     private void onLoginButtonPressed(ActionEvent event) throws Exception {
         UserDao userDao = new UserDao();
-//        System.out.println("");
-//        System.out.println("Printing users loginView");
-//        userDao.getUsers().forEach(System.out::println);
         if(userDao.usernameAndPasswordMatches(usernameTextField.getText(), passwordField.getText())) {
+            Main.setUser(new User(usernameTextField.getText(), passwordField.getText()));
             Parent menuViewParent = FXMLLoader.load(getClass().getResource("/fxml/MenuView.fxml"));
             Scene menuViewScene = new Scene(menuViewParent);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -58,6 +57,7 @@ public class LoginViewController implements Initializable {
             window.show();
         } else {
             loginErrorLabel.setVisible(true);
+            passwordField.clear();
         }
         
     }

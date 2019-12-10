@@ -16,15 +16,13 @@ public class GameTest {
     private Game gameMedium;
     private Game gameHard;
     
-    private User user;
-    
     @Before
     public void setUp() {
         User user = new User("username", "password");
         
-        gameEasy = new Game(Difficulty.EASY, user);
-        gameMedium = new Game(Difficulty.MEDIUM, user);
-        gameHard = new Game(Difficulty.HARD, user);
+        gameEasy = new Game(Difficulty.EASY);
+        gameMedium = new Game(Difficulty.MEDIUM);
+        gameHard = new Game(Difficulty.HARD);
     }
     
     @Test
@@ -65,14 +63,18 @@ public class GameTest {
         assertTrue(gameHard.checkAnswer(-41, "-42+1"));
         assertTrue(gameHard.checkAnswer(0, "0-0"));
         assertTrue(gameHard.checkAnswer(0, "10*0"));
-        assertTrue(gameHard.checkAnswer(1368, "114*12"));
+        assertTrue(gameHard.checkAnswer(1368.0, "114*12"));
         assertTrue(gameHard.checkAnswer(17, "714/42"));
         assertTrue(gameHard.checkAnswer(753, "711+42"));
         assertTrue(gameHard.checkAnswer(1, "3/3"));
+        assertTrue(gameHard.checkAnswer(1.5, "3/2"));
+        assertTrue(gameHard.checkAnswer(5, "3+2"));
+        assertTrue(gameHard.checkAnswer(5.0, "3+2"));
         assertFalse(gameHard.checkAnswer(0, "3*1"));
         assertFalse(gameHard.checkAnswer(112, "112/2"));
         assertFalse(gameHard.checkAnswer(321, "455-32"));
         assertFalse(gameHard.checkAnswer(27, "3+3"));
+        assertFalse(gameHard.checkAnswer(1, "3/2"));
     }
     
 }

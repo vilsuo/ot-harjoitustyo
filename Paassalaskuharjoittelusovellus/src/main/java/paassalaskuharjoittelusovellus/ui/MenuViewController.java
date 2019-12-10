@@ -1,7 +1,6 @@
 
 package paassalaskuharjoittelusovellus.ui;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -13,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import paassalaskuharjoittelusovellus.logic.Difficulty;
 import paassalaskuharjoittelusovellus.logic.Game;
@@ -27,10 +27,13 @@ public class MenuViewController implements Initializable {
     private Button playButton;
     @FXML
     private Button logOutButton;
+    @FXML
+    private Label usernameLabel;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         comboBox.getItems().addAll(Difficulty.EASY, Difficulty.MEDIUM, Difficulty.HARD);
+        usernameLabel.setText("Logged in: " + Main.getUser().getUserName());
     }
     
     @FXML
@@ -42,6 +45,7 @@ public class MenuViewController implements Initializable {
     
     @FXML
     private void onPlayButtonPressed(ActionEvent event) throws Exception {
+        Main.setGame(new Game((Difficulty) comboBox.getValue()));
         Parent playViewParent = FXMLLoader.load(getClass().getResource("/fxml/PlayView.fxml"));
         Scene playViewScene = new Scene(playViewParent);
         
@@ -49,7 +53,6 @@ public class MenuViewController implements Initializable {
         
         window.setScene(playViewScene);
         window.show();
-//        Game game = new Game(comboBox.getValue(), user);
     }
 
     @FXML
