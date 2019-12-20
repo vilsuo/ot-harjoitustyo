@@ -13,36 +13,56 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import paassalaskuharjoittelusovellus.dao.HiscoreDao;
+import paassalaskuharjoittelusovellus.logic.HiscoreObject;
 
 public class HiscoreViewController implements Initializable {
 
     @FXML
     private Button backButton;
     @FXML
-    private TableView<?> tableView;
+    private TableView<HiscoreObject> tableView;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         tableView.setEditable(true);
         
-        TableColumn rankCol = new TableColumn("Rank");
+        TableColumn<HiscoreObject, Integer> rankCol = new TableColumn("Rank");
+        rankCol.setSortable(false);
+        rankCol.setCellValueFactory(
+                new PropertyValueFactory<HiscoreObject, Integer>("rank"));
+        rankCol.setMinWidth(40);
+        
         TableColumn usernameCol = new TableColumn("Username");
+        usernameCol.setSortable(false);
+        usernameCol.setCellValueFactory(
+                new PropertyValueFactory<HiscoreObject, String>("username"));
+        usernameCol.setMinWidth(157);
+        
         TableColumn pointsCol = new TableColumn("Points");
+        pointsCol.setSortable(false);
+        pointsCol.setCellValueFactory(
+                new PropertyValueFactory<HiscoreObject, Integer>("points"));
+        pointsCol.setMinWidth(40);
         
-        tableView.getColumns().addAll(rankCol, usernameCol, pointsCol);
+        TableColumn difficultyCol = new TableColumn("Difficulty");
+        difficultyCol.setSortable(false);
+        difficultyCol.setCellValueFactory(
+                new PropertyValueFactory<HiscoreObject, String>("difficulty"));
+        difficultyCol.setMinWidth(40);
         
+        try {
+            HiscoreDao hiscoreDao = new HiscoreDao();
+            tableView.setItems(hiscoreDao.getData());
+            tableView.getColumns().addAll(rankCol, usernameCol, pointsCol, difficultyCol);
+            
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        tableView.refresh();
+        tableView.setEditable(false);
     }    
 
     @FXML
