@@ -17,7 +17,7 @@ Sovelluksella on vain yksi käyttäjärooli eli normaalikäyttäjä.
 
 (tehty) Oikeasta tai väärästä ratkaisusta annetaan seuraava laskutoimistus ja aika alkaa alusta. Yksi huti tulee jos käyttäjä vastaa väärin tai aika loppuu. Peli päättyy kun käyttäjälle tulee kolme hutia.
 
-Pelin päätyttyä asetetaan uusi saatu tulos pistetilastoon
+(tehty) Pelin päätyttyä asetetaan uusi saatu tulos pistetilastoon
 
 ## Jatkokehitysideoita
 Jatkokehityksenä voisi tulla vapaapelimuoto, jossa käyttäjä voisi pelata loputtoman kauan.

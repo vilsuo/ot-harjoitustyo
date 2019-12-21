@@ -11,4 +11,5 @@
 |3.12    | 5  | tietokantoja ja sisäänkirjautumisen luonti|
 |9.12    | 3  | testejä|
 10.12    | 5  | pelin logiikan luontia, javadoc, käyttöohje|
-|yhteensä| 36  | 
+|20.12   | 5  | hiscorien tallentaminen ja näyttäminen, sekä pelaajalle jäljellä olevien elämien näyttäminen|
+|yhteensä| 41  | 
