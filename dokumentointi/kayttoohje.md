@@ -1,5 +1,5 @@
 # Käyttöohje
-Lataa tiedosto [paassalaskuharjoitelusovellus.jar](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/Viikko6)
+Lataa tiedosto [Paassalaskuharjoitelusovellus.jar](https://github.com/vilsuo/ot-harjoitustyo/releases/download/Loppupalautus/Paassalaskuharjoittelusovellus.jar)
 
 ## Ohjelman käynnistäminen
 Ohjelma käynnistetään komennolla
