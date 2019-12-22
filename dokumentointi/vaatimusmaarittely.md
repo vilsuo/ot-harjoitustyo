@@ -9,7 +9,7 @@ Sovelluksella on vain yksi käyttäjärooli eli normaalikäyttäjä.
 ![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/kayttoliittymaluonnos.jpg)
 
 ## Toiminnallisuus
-(tehty) Aluksi käyttäjä voi luoda uuden käyttätunnuksen jos sellaista ei vielä ole. 
+(tehty) Aluksi käyttäjä voi luoda uuden käyttätunnuksen jos sellaista ei ole. 
 
 (tehty) Kirjauduttuaan sisään käyttäjä voi aloittaa uuden pelin, tarkastella pistetilastoa tai kirjautua ulos käyttäjältään.
 

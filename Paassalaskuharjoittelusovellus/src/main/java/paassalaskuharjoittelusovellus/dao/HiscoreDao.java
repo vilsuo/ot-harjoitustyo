@@ -13,6 +13,10 @@ import paassalaskuharjoittelusovellus.domain.User;
 import paassalaskuharjoittelusovellus.logic.Game;
 import paassalaskuharjoittelusovellus.logic.HiscoreObject;
 
+/**
+ * Class for handling Hiscore database transactions.
+ * 
+ */
 public class HiscoreDao {
 
     private String url;
@@ -25,7 +29,20 @@ public class HiscoreDao {
         createHiscoreTable();
     }
     
-    private Connection getConnection() throws Exception {
+    /**
+     * Used for testing this class.
+     *
+     * @param url the URL of the test database
+     * @throws Exception
+     */
+    public HiscoreDao(String url) throws Exception {
+        this.url = url;
+        conn = null;
+        
+        createHiscoreTable();
+    }
+    
+    public Connection getConnection() throws Exception {
         if (conn == null) {
             conn = DriverManager.getConnection(url, "sa", "");
         }
@@ -39,7 +56,6 @@ public class HiscoreDao {
      */
     private void createHiscoreTable() throws Exception {
         String query = "CREATE TABLE IF NOT EXISTS Hiscore (\n"
-//                + "id INTEGER AUTO_INCREMENT PRIMARY KEY, \n"
                 + "points INT, \n"
                 + "username VARCHAR(255), \n"
                 + "difficulty VARCHAR(255)"
@@ -47,6 +63,7 @@ public class HiscoreDao {
         
         try (Statement stmt = getConnection().createStatement()) {
             stmt.execute(query);
+            stmt.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -54,10 +71,10 @@ public class HiscoreDao {
     
     /**
      * 
-     * Adds new entry in the Hiscore table.
+     * Adds a new entry in the Hiscore table.
      * 
-     * @param user gets username from this user
-     * @param game Gets points and difficulty from this game
+     * @param user username from this User
+     * @param game points and difficulty from this Game
      * 
      * @throws Exception 
      */
@@ -75,7 +92,14 @@ public class HiscoreDao {
         stmt.close();
     }
     
-    public ObservableList<HiscoreObject> getData() throws Exception {
+    /**
+     * 
+     * @return ObservableList of HiscoreObjects sorted by points descending. 
+     * Each HiscoreObject has a rank corresponding to its points.
+     * 
+     * @throws Exception 
+     */
+    public ObservableList<HiscoreObject> getHiscoreObjectsSortedByPoints() throws Exception {
         ObservableList<HiscoreObject> list = FXCollections.observableArrayList();
         
         String query = "SELECT * FROM Hiscore ORDER BY points DESC;";

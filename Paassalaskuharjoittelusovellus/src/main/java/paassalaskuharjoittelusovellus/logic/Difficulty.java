@@ -1,6 +1,10 @@
 
 package paassalaskuharjoittelusovellus.logic;
 
+/**
+ * A game difficulty.
+ * 
+ */
 public enum Difficulty {
     EASY(1, 5),
     MEDIUM(5, 10),
@@ -14,10 +18,18 @@ public enum Difficulty {
         this.timePerAnswer = timePerAnswer;
     }
 
+    /**
+     *
+     * @return the points for one correct answer
+     */
     public int getPointsPerCorrectAnswer() {
         return pointsPerCorrectAnswer;
     }
 
+    /**
+     *
+     * @return the time limit for one answer
+     */
     public int getTimePerAnswer() {
         return timePerAnswer;
     }

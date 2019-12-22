@@ -55,7 +55,7 @@ public class HiscoreViewController implements Initializable {
         
         try {
             HiscoreDao hiscoreDao = new HiscoreDao();
-            tableView.setItems(hiscoreDao.getData());
+            tableView.setItems(hiscoreDao.getHiscoreObjectsSortedByPoints());
             tableView.getColumns().addAll(rankCol, usernameCol, pointsCol, difficultyCol);
             
         } catch (Exception e) {

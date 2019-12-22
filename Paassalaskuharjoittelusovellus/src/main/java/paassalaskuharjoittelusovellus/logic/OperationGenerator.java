@@ -5,11 +5,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * A Class for generation mathematical operations in String form.
+ * 
+ */
 public class OperationGenerator {
     private final Difficulty difficulty;
     private final Random random;
     private final List<String> operations;
     
+    /**
+     * 
+     * @param difficulty the difficulty of generated operations
+     */
     public OperationGenerator(Difficulty difficulty) {
         this.difficulty = difficulty;
         this.random = new Random();
@@ -19,7 +27,7 @@ public class OperationGenerator {
     /**
      * Creates a new random operation for current difficulty.
      * 
-     * @return operation as a String
+     * @return the generated mathematical operation as a String
      */
     public String createNewRandomOperation() {
         switch (difficulty) {

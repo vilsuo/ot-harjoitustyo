@@ -24,6 +24,9 @@ public class Game {
         return difficulty;
     }
     
+    /**
+     * Adds points by taking into account the difficulty level.
+     */
     public void addPoints() {
         points += difficulty.getPointsPerCorrectAnswer();
     }
@@ -37,7 +40,7 @@ public class Game {
     }
     
     /**
-     * Loses one live from the game.
+     * Loses one life.
      */
     public void loseALife() {
         livesLeft--;
@@ -57,7 +60,6 @@ public class Game {
     /**
      * Checks if the given answer is correct for the given operation.
      * 
-     *
      * @param answer given answer
      * @param operation the operation to check the answer for
      * 

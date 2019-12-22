@@ -1,7 +1,6 @@
 
 package paassalaskuharjoittelusovellus.logicTest;
 
-import java.util.regex.Pattern;
 import javax.script.ScriptException;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -36,25 +35,6 @@ public class GameTest {
         assertEquals(Difficulty.EASY.getPointsPerCorrectAnswer(), gameEasy.getPoints());
         assertEquals(Difficulty.MEDIUM.getPointsPerCorrectAnswer(), gameMedium.getPoints());
         assertEquals(Difficulty.HARD.getPointsPerCorrectAnswer(), gameHard.getPoints());
-    }
-    
-    @Test
-    public void setNewRandomOperatorCreatesProperOperations() {
-        for(int i = 0; i < 10; i++) {
-            gameEasy.setNewRandomOperation();
-            assertTrue(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", gameEasy.getOperation()));
-            gameMedium.setNewRandomOperation();
-            assertTrue(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", gameMedium.getOperation()));
-            gameHard.setNewRandomOperation();
-            assertTrue(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", gameHard.getOperation()));
-        }
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "2"));
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "+3"));
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "4*"));
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "-"));
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "&"));
-        assertFalse(Pattern.matches("\\d+(\\+|-|\\*|/)\\d+", "*4/"));
-        
     }
     
     @Test

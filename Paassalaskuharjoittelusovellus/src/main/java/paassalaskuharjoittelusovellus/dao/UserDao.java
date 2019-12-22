@@ -4,6 +4,10 @@ package paassalaskuharjoittelusovellus.dao;
 import java.sql.*;
 import paassalaskuharjoittelusovellus.domain.User;
 
+/**
+ * Class for handling User database transactions.
+ * 
+ */
 public class UserDao {
     
     private String url;
@@ -16,6 +20,12 @@ public class UserDao {
         createUserTable();
     }
     
+    /**
+     * Used for testing this class.
+     * 
+     * @param url the URL the test database
+     * @throws Exception
+     */
     public UserDao(String url) throws Exception {
         this.url = url;
         conn = null;
@@ -40,15 +50,16 @@ public class UserDao {
         
         try (Statement stmt = getConnection().createStatement()) {
             stmt.execute(query);
+            stmt.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
     
     /**
-     * Adds a new User into the user database.
+     * Adds a new User into the User table.
      * 
-     * @param user user to add
+     * @param user User to add
      * 
      * @throws Exception
      */
@@ -67,7 +78,7 @@ public class UserDao {
     }
     
     /**
-     * Checks if there is username and password match in the user database.
+     * Checks if there is username and password match in the User table. Used for login.
      *
      * @param username username to check
      * @param password password to check
@@ -86,7 +97,7 @@ public class UserDao {
     }
     
     /**
-     * Checks if the username is found in the user database.
+     * Checks if the username is found in the User table.
      * 
      * @param username username to check
      * 
@@ -101,16 +112,4 @@ public class UserDao {
         ResultSet rs = stmt.executeQuery();
         return rs.next() == true;
     }
-    
-//    public List<User> getUsers() throws Exception {
-//        String query = "SELECT * FROM User;";
-//        PreparedStatement stmt = getConnection().prepareStatement(query);
-//        ResultSet rs = stmt.executeQuery();
-//        
-//        List<User> users = new ArrayList<>();
-//        while (rs.next()) {
-//            users.add(new User(rs.getString("username"), rs.getString("password")));
-//        }
-//        return users;
-//    }
 }

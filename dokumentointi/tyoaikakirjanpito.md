@@ -12,4 +12,6 @@
 |9.12    | 3  | testejä|
 10.12    | 5  | pelin logiikan luontia, javadoc, käyttöohje|
 |20.12   | 5  | hiscorien tallentaminen ja näyttäminen, sekä pelaajalle jäljellä olevien elämien näyttäminen|
-|yhteensä| 41  | 
+|21.12   | 2  | testejä|
+|22.12   | 4  | testejä + dokumentaatio|
+|yhteensä| 47 | 

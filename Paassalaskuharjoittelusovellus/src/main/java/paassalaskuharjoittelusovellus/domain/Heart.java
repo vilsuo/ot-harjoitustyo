@@ -6,9 +6,20 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Shape;
 
+/**
+ * A heart shape for visually representing one life.
+ *
+ * @author ville
+ */
 public class Heart {
     private Shape heart;
 
+    /**
+     * A Shape for representing life.
+     *
+     * @param x estimated center x-coordinate for the heart
+     * @param y estimated center y-coordinate for the heart
+     */
     public Heart(double x, double y) {
         double offset = 5;
         Shape c1 = new Circle(x - offset, y, offset);

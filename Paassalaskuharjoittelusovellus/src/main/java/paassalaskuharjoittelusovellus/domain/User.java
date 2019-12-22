@@ -1,10 +1,19 @@
 
 package paassalaskuharjoittelusovellus.domain;
 
+/**
+ * A class used for loggin in.
+ * 
+ */
 public class User {
     private final String userName;
     private final String password;
 
+    /**
+     *
+     * @param userName username
+     * @param password password
+     */
     public User(String userName, String password) {
         this.userName = userName;
         this.password = password;
@@ -16,10 +25,5 @@ public class User {
 
     public String getPassword() {
         return password;
-    }
-    
-    @Override
-    public String toString() {
-        return "username: " + getUserName() + ", password: " + getPassword();
     }
 }
