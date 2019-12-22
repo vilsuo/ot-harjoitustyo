@@ -10,11 +10,14 @@ Sovelluksella käyttäjä voi harjoitella paassalaskutaitojaan. Sovelluksessa on
 
 [Arkkitehtuurikuvaus](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+[Testausdokumentti](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/testaus.md)
 
 ## Releaset
 [Viikko 5](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/viikko5)
 
 [Viikko 6](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/Viikko6)
+
+[Loppupalautus](https://github.com/vilsuo/ot-harjoitustyo/releases/tag/Loppupalautus)
 
 ## Komentorivitoiminnot
 ### Testaus
