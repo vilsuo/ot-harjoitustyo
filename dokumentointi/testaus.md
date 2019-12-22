@@ -9,7 +9,7 @@ DAO-luokat on testattu luomalla testitietokannat, jotka ovat identtisiä käytet
 ## Testikattavuus
 Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen rivikattavuus on 80% ja haarautumiskattavuus 95%.
 
-![](https://github.com/vilsuo/ot-harjoitustyo/tree/master/dokumentointi/kuvat/testikattavuus.png)
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/testikattavuus.png)
 
 Testaamatta jäi mm. javalla piirretyt muodot.
 
