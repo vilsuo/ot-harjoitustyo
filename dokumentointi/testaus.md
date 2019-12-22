@@ -3,6 +3,7 @@ Ohjelmaa on testattu automatisoiduin yksikkötestein JUnitilla, sekä manuaalise
 
 ## Sovelluslogiikka
 
+
 ## DAO-luokat
 DAO-luokat on testattu luomalla testitietokannat, jotka ovat identtisiä käytetävien tietokantojen kanssa.
 
@@ -15,3 +16,6 @@ Testaamatta jäi mm. javalla piirretyt muodot.
 
 ## Järjestelmätestaus
 Sovelluksen järjestelmätestaus on suoritettu manuaalisesti.
+
+### Toiminnallisuudet
+Kaikki [määrittelydokumentin](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md) ja [käyttöohjeen](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kayttoohje.md) listaamat toiminallisuudet on käyty läpi. Uutta käyttäjää luodessa on varauduttu virheellisiin arvoihin, kuten tyhjiin tai liian pitkiin merkkijonoihin, sekä jo olemassa oleviin käyttäjänimiin.
