@@ -5,9 +5,6 @@ Sovelluksessa käyttäjä voi harjoitella päässälaskutaitojaan ja kilpailla m
 ## Käyttäjät
 Sovelluksella on vain yksi käyttäjärooli eli normaalikäyttäjä.
 
-## Käyttöliittymäluonnos
-![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/kayttoliittymaluonnos.jpg)
-
 ## Toiminnallisuus
 (tehty) Aluksi käyttäjä voi luoda uuden käyttätunnuksen jos sellaista ei ole. 
 
