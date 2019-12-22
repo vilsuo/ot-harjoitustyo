@@ -17,7 +17,7 @@ Kirjautuminen onnistuu syöttämällä käyttäjätunnus ja salasana niille tark
 ## Uuden käyttäjän luonti
 Uuden käyttäjän luomiseen siirrytään painamalla **Create a new account**-nappia. Tämän jälkeen syötetään haluamansa käyttäjätunnus ja salasana niille tarkoitetuille kentille ja lopulta käyttäjä luodaan painamalla **Create**-nappia.
 
-![https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/createUser.png]
+![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/createUser.png)
 
 ## Pelin valitseminen
 Kirjauduttuaan sisään käyttäjä voi valita vaikeustason **Select difficulty**-valikosta.
