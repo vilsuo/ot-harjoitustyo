@@ -1,13 +1,15 @@
 # Testausdokumentti
-Ohjelmaa on testattu automatisoiduin yksikkötestein JUnitilla, sekä manuaalisesti tapahtunein järjestelmätason testein.
+Ohjelmaa on testattu automatisoiduin yksikkö- ja integraatiotestein JUnitilla, sekä manuaalisesti tapahtunein järjestelmätason testein.
 
-## Sovelluslogiikka
+## Yksikkö- ja integraatiotestaus
 
+### Sovelluslogiikka
+Automatisoitujen testien ytimen moudostavat sovelluslogiikkaa, eli pakkauksen [paassalaskuharjoittelusovellus.logic](https://github.com/vilsuo/ot-harjoitustyo/tree/master/Paassalaskuharjoittelusovellus/src/main/java/paassalaskuharjoittelusovellus/logic) luokkia testaava integraatiotesti [GameTest](https://github.com/vilsuo/ot-harjoitustyo/blob/master/Paassalaskuharjoittelusovellus/src/test/java/paassalaskuharjoittelusovellus/logicTest/GameTest.java).
 
-## DAO-luokat
+### DAO-luokat
 DAO-luokat on testattu luomalla testitietokannat, jotka ovat identtisiä käytetävien tietokantojen kanssa.
 
-## Testikattavuus
+### Testikattavuus
 Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen rivikattavuus on 80% ja haarautumiskattavuus 95%.
 
 ![](https://github.com/vilsuo/ot-harjoitustyo/blob/master/dokumentointi/kuvat/testikattavuus.png)
