@@ -41,13 +41,21 @@ public class CreateUserViewController implements Initializable {
         String usernameText = usernameTextField.getText();
         String passwordText = passwordField.getText();
         
-        if(usernameText.equals("") || passwordText.equals("")) {
+        if (usernameText.equals("") || passwordText.equals("")) {
+            userCreationErrorLabel.setText("Username or passsword missing.");
+            passwordField.clear();
+            return;
+        }
+        
+        if (usernameText.length() > 20 || passwordText.length() > 20) {
+            userCreationErrorLabel.setText("Username or password to long. Maximum 20 characters.");
+            passwordField.clear();
             return;
         }
         
         UserDao userDao = new UserDao();
-        if(userDao.usernameIsTaken(usernameText)) {
-            userCreationErrorLabel.setVisible(true);
+        if (userDao.usernameIsTaken(usernameText)) {
+            userCreationErrorLabel.setText("This username is already taken.");
             passwordField.clear();
         } else {
             userDao.create(new User(usernameText, passwordText));
